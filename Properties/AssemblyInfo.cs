@@ -11,7 +11,7 @@ using System.Resources;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("NES GROUP")]
 [assembly: AssemblyProduct("APTX发布代码生成工具")]
-[assembly: AssemblyCopyright("版权所有 (C) SquallATF 2008-2010")]
+[assembly: AssemblyCopyright("版权所有 (C) SquallATF 2008-2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

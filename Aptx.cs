@@ -27,19 +27,26 @@ namespace Aptxcode
             "时轴：有经验。\r\n" +
             "特效：会ass或AE。\r\n" +
             "海报：熟练运用制图软件，有一定创新能力，不拖稿。欲报名者请附上自己之前的作品\r\n";
-        private string pm1 = "有意者请PM [url=http://bbs.aptx.cn/home.php?mod=spacecp&ac=pm&op=showmsg&handlekey=showmsg_112223&touid=112223&pmid=0&daterange=2&pid=7411897]xiaobin[/url]\r\n或者请发Email至aptx4869_subgroup@hotmail.com\r\n";
-        private string pm2 = "有意者请至[url=bbs.aptx.cn]名侦探柯南事务所[/url]PM xiaobin\r\n或者请发Email至aptx4869_subgroup@hotmail.com\r\n";
+        private string pm1 = "有意者请PM 光炫圣皇、安素子、apple51320\r\n或者请发Email至aptx4869_sub@outlook.com\r\n或者加事务所字幕组新人群：285034\r\n[size=4][color=red]谢绝初三高三学生，请以学业为重[/color][/size]\r\n";
+        private string pm2 = "有意者请至[url=https://bbs.aptx.cn/forum.php]名侦探柯南事务所[/url]PM 光炫圣皇、安素子、apple51320\r\n或者请发Email至aptx4869_sub@outlook.com\r\n或者加事务所字幕组新人群：285034\r\n[size=4][color=red]谢绝初三高三学生，请以学业为重[/color][/size]\r\n";
 
         private readonly string[] trackers = new string[]{
-            "http://t2.popgo.org:7456/annonce",
-            "http://tracker.ktxp.com:6868/announce",
-            "http://tracker.ktxp.com:7070/announce",
-            "http://tracker.openbittorrent.com:80/announce",
-            "http://tracker.publicbt.com:80/announce",
-            "http://tracker.prq.to/announce",
-            "http://www.sakuraflying.cn:2710/announce",
+            "https://tr.bangumi.moe:9696/announce",
+            "http://t.acg.rip:6699/announce",
             "http://share.camoe.cn:8080/announce",
-            "http://tracker.lbs123456.com:233/announce"
+            "http://tracker.dmhy.org:8000/announce",
+            "http://tracker.skyts.net:6969/announce",
+            "http://open.acgtracker.com:1096/announce",
+            "http://tr.bangumi.moe:6969/announce",
+            "http://tracker.lintk.me:2710/announce",
+            "http://open.nyaatorrents.info:6544/announce",
+            "http://tracker.kuroy.me:5944/announce",
+            "http://tracker.skyts.cn:6969/announce",
+            "http://t.nyaatracker.com/announce",
+            "http://nyaa.tracker.wf:7777/announce",
+            "http://tracker.kamigami.org:2710/announce",
+            "udp://tracker.dmhy.org:8000/announce",
+            "udp://tr.bangumi.moe:6969/announce"
         };
 
        #region 程序集属性访问器
@@ -167,7 +174,7 @@ namespace Aptxcode
             txt_bbscode.Text = "名侦探柯南 第" + txt_vol.Text + "话 " + txt_name.Text +
                 " " + comboBox1.Text + "\r\n\r\n制作组：APTX4869字幕组\r\n发布组：APTX分流组\r\n" +
                 "RESEED有效期：" + DateTime.Today.AddMonths(1).AddDays(-1).ToString("yyyy-MM-dd") +
-                "\r\n文件大小：" + size + "\r\n\r\n海报：\r\n\r\n[align=center][img]http://s473.photobucket.com/albums/rr98/APTXCN/conan" +
+                "\r\n文件大小：" + size + "\r\n\r\n海报：\r\n\r\n[align=center][img]http://ot9fsgqtn.bkt.clouddn.com/17-7-27/58706926.jpg" +
                 txt_vol.Text + ".jpg[/img][/align]\r\n[color=blue]\r\n\r\n" + ed2kl + "\r\n\r\n" +
                 "[align=center][table=100%][tr][td][align=center][color=blue][b]BT下载[/b][/color][/align][/td][/tr]" +
                 "[tr][td][local]1[/local][/td][/tr][/table][/align]\r\n\r\nMO电信：[url]" + 
@@ -176,17 +183,17 @@ namespace Aptxcode
                 "电信提取码：" + txt_mo1.Text + "\r\n网通提取码：" + txt_mo2.Text + "\r\n[/color]\r\n\r\n[color=red][b]" +
                 "\r\n\r\n\r\n在线看柯南![url]http://tv.aptx.cn[/url]\r\n";
             */
-            txt_bbscode.Text = String.Format("名侦探柯南 {0}{1} {2}\r\n\r\n制作组：APTX4869字幕组\r\n发布组：APTX分流组\r\nRESEED有效期：{3:yyyy-MM-dd}\r\n文件大小：{4}\r\n\r\n{5}{6}\r\n海报：\r\n\r\n[align=center][img]http://s473.photobucket.com/albums/rr98/APTXCN/{7}{8}.jpg[/img][/align]\r\n[color=blue]\r\n\r\n\reMule:\n\r\n{9}{10}\r\n\r\n\r\n", (checkBox1.Checked ? "剧场版" + txt_vol.Text + " " : "第" + txt_vol.Text + "话 "), txt_name.Text, comboBox1.Text, DateTime.Today.AddMonths(1).AddDays(-1), size, recad, pm1, (checkBox1.Checked ? "m" : "conan"), txt_vol.Text, ed2kl, (string.IsNullOrEmpty(textBox1.Text)?"":"\r\n\r\nMagent:"+textBox1.Text));
+            txt_bbscode.Text = String.Format("名侦探柯南 {0}{1} {2}\r\n\r\n制作组：APTX4869字幕组\r\n发布组：APTX分流组\r\nRESEED有效期：{3:yyyy-MM-dd}\r\n文件大小：{4}\r\n\r\n{5}{6}\r\n海报：\r\n\r\n[align=center][img]http://ot9fsgqtn.bkt.clouddn.com/17-7-27/58706926.jpg[/img][/align]\r\n[color=blue]\r\n\r\n\reMule:\n\r\n{9}{10}\r\n\r\n\r\n", (checkBox1.Checked ? "剧场版" + txt_vol.Text + " " : "第" + txt_vol.Text + "话 "), txt_name.Text, comboBox1.Text, DateTime.Today.AddMonths(1).AddDays(-1), size, recad, pm1, (checkBox1.Checked ? "m" : "conan"), txt_vol.Text, ed2kl, (string.IsNullOrEmpty(textBox1.Text)?"":"\r\n\r\nMagent:"+textBox1.Text));
             txt_bttitle.Text = String.Format("[APTX4869][CONAN][名侦探柯南 {0} {1}][HDTV][{2}]", (checkBox1.Checked ? "MOVIE" + txt_vol.Text : txt_vol.Text), txt_name.Text, comboBox1.Text);
             /*
             txt_btcode.Text = "名侦探柯南 第" + txt_vol.Text + "话 " + txt_name.Text +
                 " " + comboBox1.Text + "\r\n\r\n制作组：APTX4869字幕组\r\n发布组：APTX分流组\r\n" +
                 "RESEED有效期：" + DateTime.Today.AddMonths(1).AddDays(-1).ToString("yyyy-MM-dd") +
-                "\r\n文件大小：" + size + "\r\n\r\n海报：\r\n\r\n[img]http://s473.photobucket.com/albums/rr98/APTXCN/conan" +
+                "\r\n文件大小：" + size + "\r\n\r\n海报：\r\n\r\n[img]http://ot9fsgqtn.bkt.clouddn.com/17-7-27/58706926.jpg" +
                 txt_vol.Text + ".jpg[/img]\r\n\r\n\r\n[color=red][b]" +
                 "\r\n\r\n\r\n在线看柯南![url]http://tv.aptx.cn[/url]\r\n";
             */
-            txt_btcode.Text = String.Format("名侦探柯南 {0}{1} {2}\r\n\r\n制作组：APTX4869字幕组\r\n发布组：APTX分流组\r\nRESEED有效期：{3:yyyy-MM-dd}\r\n文件大小：{4}\r\n\r\n{5}{6}\r\n海报：\r\n\r\n[img]http://s473.photobucket.com/albums/rr98/APTXCN/{7}{8}.jpg[/img]", (checkBox1.Checked ? "剧场版" + txt_vol.Text + " " : "第" + txt_vol.Text + "话 "), txt_name.Text, comboBox1.Text, DateTime.Today.AddMonths(1).AddDays(-1), size, recad, pm2, (checkBox1.Checked ? "m" : "conan"), txt_vol.Text);
+            txt_btcode.Text = String.Format("名侦探柯南 {0}{1} {2}\r\n\r\n制作组：APTX4869字幕组\r\n发布组：APTX分流组\r\nRESEED有效期：{3:yyyy-MM-dd}\r\n文件大小：{4}\r\n\r\n{5}{6}\r\n海报：\r\n\r\n[img]http://ot9fsgqtn.bkt.clouddn.com/17-7-27/58706926.jpg[/img]", (checkBox1.Checked ? "剧场版" + txt_vol.Text + " " : "第" + txt_vol.Text + "话 "), txt_name.Text, comboBox1.Text, DateTime.Today.AddMonths(1).AddDays(-1), size, recad, pm2, (checkBox1.Checked ? "m" : "conan"), txt_vol.Text);
             /*
             if (txt_tvol.Text != "")
             {

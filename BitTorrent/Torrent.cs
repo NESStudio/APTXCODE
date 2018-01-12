@@ -110,7 +110,7 @@ namespace Aptxcode.BitTorrent
                 info.Add("pieces", pieces);
             }
             info.Add("publisher", "APTX分流组");
-            info.Add("publisher-url", "http://bbs.aptx.cn");
+            info.Add("publisher-url", "https://bbs.aptx.cn");
             using (SHA1 sha1 = new SHA1CryptoServiceProvider())
             {
                 string infohash = Aptxcode.eMule.Base32Encode.Encode(sha1.ComputeHash(BEncoder.BEncode(info)));
