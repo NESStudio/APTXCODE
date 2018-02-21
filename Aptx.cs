@@ -22,7 +22,7 @@ namespace Aptxcode
         private string path = Application.StartupPath;
         IntPtr handlePreview = IntPtr.Zero;
         private string recad = "[b]APTX字幕组招募：[/b]\r\n" +
-            "翻译：日语一级，听力80分以上优先，有字幕制作经验优先，要求周日到周二能在线。\r\n" +
+            "翻译：日语一级，听力54分以上优先，有字幕制作经验优先，要求周日到周二能在线。\r\n" +
             "后期：有好的电脑和带宽，有一定电脑技术，会写avs优先，会使用x264命令行和megui。\r\n" +
             "时轴：有经验。\r\n" +
             "特效：会ass或AE。\r\n" +
