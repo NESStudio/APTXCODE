@@ -33,7 +33,6 @@ namespace Aptxcode
         private readonly string[] trackers = new string[]{
             "https://tr.bangumi.moe:9696/announce",
             "http://t.acg.rip:6699/announce",
-            "http://share.camoe.cn:8080/announce",
             "http://tracker.dmhy.org:8000/announce",
             "http://tracker.skyts.net:6969/announce",
             "http://open.acgtracker.com:1096/announce",
@@ -46,7 +45,13 @@ namespace Aptxcode
             "http://nyaa.tracker.wf:7777/announce",
             "http://tracker.kamigami.org:2710/announce",
             "udp://tracker.dmhy.org:8000/announce",
-            "udp://tr.bangumi.moe:6969/announce"
+            "udp://tr.bangumi.moe:6969/announce",
+            "udp://tracker.skyts.net:6969/announce",
+            "http://tracker.skyts.net:6969/announce",
+            "udp://tracker.skyts.cc:6969/announce",
+            "udp://tracker.ink:6969/announce",
+            "udp://asia.tracker.ink:6969/announce",
+            "udp://open.tracker.ink:6969/announce"
         };
 
        #region 程序集属性访问器
@@ -184,7 +189,7 @@ namespace Aptxcode
                 "\r\n\r\n\r\n在线看柯南![url]http://tv.aptx.cn[/url]\r\n";
             */
             txt_bbscode.Text = String.Format("名侦探柯南 {0}{1} {2}\r\n\r\n制作组：APTX4869字幕组\r\n发布组：APTX分流组\r\nRESEED有效期：{3:yyyy-MM-dd}\r\n文件大小：{4}\r\n\r\n{5}{6}\r\n海报：\r\n\r\n[align=center][img]http://ot9fsgqtn.bkt.clouddn.com/17-7-27/58706926.jpg[/img][/align]\r\n[color=blue]\r\n\r\n\reMule:\n\r\n{9}{10}\r\n\r\n\r\n", (checkBox1.Checked ? "剧场版" + txt_vol.Text + " " : "第" + txt_vol.Text + "话 "), txt_name.Text, comboBox1.Text, DateTime.Today.AddMonths(1).AddDays(-1), size, recad, pm1, (checkBox1.Checked ? "m" : "conan"), txt_vol.Text, ed2kl, (string.IsNullOrEmpty(textBox1.Text)?"":"\r\n\r\nMagent:"+textBox1.Text));
-            txt_bttitle.Text = String.Format("[APTX4869][CONAN][名侦探柯南 {0} {1}][HDTV][{2}]", (checkBox1.Checked ? "MOVIE" + txt_vol.Text : txt_vol.Text), txt_name.Text, comboBox1.Text);
+            txt_bttitle.Text = String.Format("[APTX4869][CONAN][名侦探柯南 {0} {1}][{2}][{3}]", (checkBox1.Checked ? "MOVIE" + txt_vol.Text : txt_vol.Text), txt_name.Text, (checkBox1.Checked ? "BDRIP" : "HDTV"), comboBox1.Text);
             /*
             txt_btcode.Text = "名侦探柯南 第" + txt_vol.Text + "话 " + txt_name.Text +
                 " " + comboBox1.Text + "\r\n\r\n制作组：APTX4869字幕组\r\n发布组：APTX分流组\r\n" +
@@ -193,7 +198,7 @@ namespace Aptxcode
                 txt_vol.Text + ".jpg[/img]\r\n\r\n\r\n[color=red][b]" +
                 "\r\n\r\n\r\n在线看柯南![url]http://tv.aptx.cn[/url]\r\n";
             */
-            txt_btcode.Text = String.Format("名侦探柯南 {0}{1} {2}\r\n\r\n制作组：APTX4869字幕组\r\n发布组：APTX分流组\r\nRESEED有效期：{3:yyyy-MM-dd}\r\n文件大小：{4}\r\n\r\n{5}{6}\r\n海报：\r\n\r\n[img]http://ot9fsgqtn.bkt.clouddn.com/17-7-27/58706926.jpg[/img]", (checkBox1.Checked ? "剧场版" + txt_vol.Text + " " : "第" + txt_vol.Text + "话 "), txt_name.Text, comboBox1.Text, DateTime.Today.AddMonths(1).AddDays(-1), size, recad, pm2, (checkBox1.Checked ? "m" : "conan"), txt_vol.Text);
+            txt_btcode.Text = String.Format("名侦探柯南 {0}{1} {2}\r\n\r\n制作组：APTX4869字幕组\r\n发布组：APTX分流组\r\nRESEED有效期：{3:yyyy-MM-dd}\r\n文件大小：{4}\r\n\r\n{5}{6}\r\n海报：\r\n\r\n[img]http://ot9fsgqtn.bkt.clouddn.com/17-7-27/58706926.jpg[/img]", (checkBox1.Checked ? "剧场版" + txt_vol.Text + "BDRIP 720P/1080P " : "第" + txt_vol.Text + "话 "), txt_name.Text, comboBox1.Text, DateTime.Today.AddMonths(1).AddDays(-1), size, recad, pm2, (checkBox1.Checked ? "m" : "conan"), txt_vol.Text);
             /*
             if (txt_tvol.Text != "")
             {
