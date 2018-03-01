@@ -217,7 +217,7 @@
             this.comboBox1.Items.AddRange(new object[] {
             "简体MP4",
             "繁体MP4",
-            "1080P][MKV"});
+            "MKV"});
             this.comboBox1.Location = new System.Drawing.Point(345, 17);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(76, 23);

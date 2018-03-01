@@ -1,4 +1,9 @@
-﻿Version: 1.1.0.7(2018-02-21)
+﻿Version: 1.1.0.8(2018-03-01)
+更新Trackers列表
+修改发布格式
+by Alex(edogawa1999@aptx.cn)
+============================
+Version: 1.1.0.7(2018-02-21)
 变更招募信息
 by Alex(edogawa1999@aptx.cn)
 Version: 1.1.0.6(2018-01-12)
