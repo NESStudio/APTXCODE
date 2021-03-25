@@ -52,6 +52,7 @@
             this.更新内容ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.关于ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.label7 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.txt_file = new System.Windows.Forms.TextBox();
@@ -66,7 +67,6 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -80,7 +80,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(2, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 12);
+            this.label1.Size = new System.Drawing.Size(60, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "第几话:";
             // 
@@ -137,7 +137,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(93, 20);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 12);
+            this.label2.Size = new System.Drawing.Size(45, 15);
             this.label2.TabIndex = 7;
             this.label2.Text = "标题:";
             // 
@@ -145,7 +145,7 @@
             // 
             this.txt_name.Location = new System.Drawing.Point(133, 17);
             this.txt_name.Name = "txt_name";
-            this.txt_name.Size = new System.Drawing.Size(166, 21);
+            this.txt_name.Size = new System.Drawing.Size(166, 25);
             this.txt_name.TabIndex = 3;
             // 
             // label5
@@ -153,7 +153,7 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(305, 20);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 12);
+            this.label5.Size = new System.Drawing.Size(45, 15);
             this.label5.TabIndex = 11;
             this.label5.Text = "类型:";
             // 
@@ -162,7 +162,7 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(14, 71);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 12);
+            this.label6.Size = new System.Drawing.Size(47, 15);
             this.label6.TabIndex = 12;
             this.label6.Text = "ED2K:";
             // 
@@ -180,14 +180,14 @@
             // 
             this.txt_bbstitle.Location = new System.Drawing.Point(9, 17);
             this.txt_bbstitle.Name = "txt_bbstitle";
-            this.txt_bbstitle.Size = new System.Drawing.Size(333, 21);
+            this.txt_bbstitle.Size = new System.Drawing.Size(333, 25);
             this.txt_bbstitle.TabIndex = 2;
             // 
             // txt_bttitle
             // 
             this.txt_bttitle.Location = new System.Drawing.Point(9, 17);
             this.txt_bttitle.Name = "txt_bttitle";
-            this.txt_bttitle.Size = new System.Drawing.Size(333, 21);
+            this.txt_bttitle.Size = new System.Drawing.Size(333, 25);
             this.txt_bttitle.TabIndex = 2;
             // 
             // btn_copy3
@@ -220,14 +220,14 @@
             "MKV"});
             this.comboBox1.Location = new System.Drawing.Point(345, 17);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(76, 20);
+            this.comboBox1.Size = new System.Drawing.Size(76, 23);
             this.comboBox1.TabIndex = 4;
             // 
             // txt_vol
             // 
             this.txt_vol.Location = new System.Drawing.Point(55, 17);
             this.txt_vol.Name = "txt_vol";
-            this.txt_vol.Size = new System.Drawing.Size(32, 21);
+            this.txt_vol.Size = new System.Drawing.Size(32, 25);
             this.txt_vol.TabIndex = 2;
             this.txt_vol.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -254,11 +254,12 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.帮助ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(454, 25);
+            this.menuStrip1.Size = new System.Drawing.Size(454, 28);
             this.menuStrip1.TabIndex = 32;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -268,20 +269,20 @@
             this.更新内容ToolStripMenuItem,
             this.关于ToolStripMenuItem});
             this.帮助ToolStripMenuItem.Name = "帮助ToolStripMenuItem";
-            this.帮助ToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
+            this.帮助ToolStripMenuItem.Size = new System.Drawing.Size(51, 24);
             this.帮助ToolStripMenuItem.Text = "帮助";
             // 
             // 更新内容ToolStripMenuItem
             // 
             this.更新内容ToolStripMenuItem.Name = "更新内容ToolStripMenuItem";
-            this.更新内容ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.更新内容ToolStripMenuItem.Size = new System.Drawing.Size(144, 26);
             this.更新内容ToolStripMenuItem.Text = "更新内容";
             this.更新内容ToolStripMenuItem.Click += new System.EventHandler(this.更新内容ToolStripMenuItem_Click);
             // 
             // 关于ToolStripMenuItem
             // 
             this.关于ToolStripMenuItem.Name = "关于ToolStripMenuItem";
-            this.关于ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.关于ToolStripMenuItem.Size = new System.Drawing.Size(144, 26);
             this.关于ToolStripMenuItem.Text = "关于";
             this.关于ToolStripMenuItem.Click += new System.EventHandler(this.关于ToolStripMenuItem_Click);
             // 
@@ -315,12 +316,22 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "发布内容";
             // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(349, 46);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(59, 19);
+            this.checkBox2.TabIndex = 41;
+            this.checkBox2.Text = "目录";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(2, 119);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(47, 12);
+            this.label7.Size = new System.Drawing.Size(63, 15);
             this.label7.TabIndex = 40;
             this.label7.Text = "Magnet:";
             // 
@@ -328,7 +339,7 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(55, 116);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(287, 21);
+            this.textBox1.Size = new System.Drawing.Size(287, 25);
             this.textBox1.TabIndex = 39;
             this.textBox1.Click += new System.EventHandler(this.textBox1_Click);
             // 
@@ -337,7 +348,7 @@
             this.txt_file.Location = new System.Drawing.Point(55, 44);
             this.txt_file.Name = "txt_file";
             this.txt_file.ReadOnly = true;
-            this.txt_file.Size = new System.Drawing.Size(222, 21);
+            this.txt_file.Size = new System.Drawing.Size(222, 25);
             this.txt_file.TabIndex = 38;
             // 
             // label4
@@ -345,7 +356,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(2, 47);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(47, 12);
+            this.label4.Size = new System.Drawing.Size(60, 15);
             this.label4.TabIndex = 37;
             this.label4.Text = "文件名:";
             // 
@@ -354,7 +365,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(14, 142);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(0, 12);
+            this.label3.Size = new System.Drawing.Size(0, 15);
             this.label3.TabIndex = 36;
             // 
             // btem_btn
@@ -390,7 +401,7 @@
             this.checkBox1.AutoSize = true;
             this.checkBox1.Location = new System.Drawing.Point(283, 46);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(60, 16);
+            this.checkBox1.Size = new System.Drawing.Size(74, 19);
             this.checkBox1.TabIndex = 5;
             this.checkBox1.Text = "剧场版";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -404,13 +415,13 @@
             this.tableLayoutPanel1.Controls.Add(this.groupBox2, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.groupBox3, 0, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 25);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 28);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 194F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 138F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 138F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(454, 467);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(454, 464);
             this.tableLayoutPanel1.TabIndex = 33;
             // 
             // groupBox2
@@ -453,16 +464,6 @@
             // 
             this.openFileDialog1.Filter = "MP4/MKV files|*.mp4;*.mkv|MP4 files|*.mp4|MKV files|*.mkv|All files|*.*";
             // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(349, 46);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(48, 16);
-            this.checkBox2.TabIndex = 41;
-            this.checkBox2.Text = "目录";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            // 
             // folderBrowserDialog1
             // 
             this.folderBrowserDialog1.RootFolder = System.Environment.SpecialFolder.MyComputer;
@@ -470,12 +471,12 @@
             // 
             // Aptx
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(454, 492);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.menuStrip1);
-            this.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
