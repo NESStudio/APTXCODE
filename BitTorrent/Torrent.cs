@@ -43,7 +43,7 @@ namespace Aptxcode.BitTorrent
         {
             _trackers = trackers;
             _name = name;
-            _picelength = blocksize * 1024;
+            _picelength = blocksize * 1024 * 1024;
             _comment = comment;
             _isdir = Directory.Exists(name);
             _isprivate = isprivate;
