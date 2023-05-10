@@ -26,9 +26,10 @@ namespace Aptxcode
             "后期：有好的电脑和带宽，有一定电脑技术，会写avs优先，会使用x264命令行和megui。\r\n" +
             "时轴：有经验。\r\n" +
             "特效：会ass或AE。\r\n" +
-            "海报：熟练运用制图软件，有一定创新能力，不拖稿。欲报名者请附上自己之前的作品\r\n";
-        private string pm1 = "有意者请PM 光炫圣皇、安素子、apple51320\r\n或者请发Email至aptx4869_sub@outlook.com\r\n或者加事务所字幕组新人群：285034\r\n[size=4][color=red]谢绝初三高三学生，请以学业为重[/color][/size]\r\n";
-        private string pm2 = "有意者请至[url=https://bbs.aptx.cn/forum.php]名侦探柯南事务所[/url]PM 光炫圣皇、安素子、apple51320\r\n或者请发Email至aptx4869_sub@outlook.com\r\n或者加事务所字幕组新人群：285034\r\n[size=4][color=red]谢绝初三高三学生，请以学业为重[/color][/size]\r\n";
+            "海报：熟练运用制图软件，有一定创新能力，不拖稿。欲报名者请附上自己之前的作品\r\n" +
+            "有意者请发Email至aptx4869@a1ex.pw\r\n" +
+            "或者加事务所字幕组新人群：285034\r\n" +
+            "[size=4][color=red]谢绝初三高三学生，请以学业为重[/color][/size]\r\n";
 
         private readonly string[] trackers = new string[]{
             "https://tr.bangumi.moe:9696/announce",
@@ -188,7 +189,7 @@ namespace Aptxcode
                 "电信提取码：" + txt_mo1.Text + "\r\n网通提取码：" + txt_mo2.Text + "\r\n[/color]\r\n\r\n[color=red][b]" +
                 "\r\n\r\n\r\n在线看柯南![url]http://tv.aptx.cn[/url]\r\n";
             */
-            txt_bbscode.Text = String.Format("名侦探柯南 {0}{1} {2}\r\n\r\n制作组：APTX4869字幕组\r\n发布组：APTX分流组\r\nRESEED有效期：{3:yyyy-MM-dd}\r\n文件大小：{4}\r\n\r\n{5}{6}\r\n海报：\r\n\r\n[align=center][img]https://a1ex.pw/img/aptx/qrcode.jpg[/img][/align]\r\n[color=blue]\r\n\r\n\reMule:\n\r\n{9}{10}\r\n\r\n\r\n", (checkBox1.Checked ? "剧场版" + txt_vol.Text + " " : "第" + txt_vol.Text + "话 "), txt_name.Text, comboBox1.Text, DateTime.Today.AddMonths(1).AddDays(-1), size, recad, pm1, (checkBox1.Checked ? "m" : "conan"), txt_vol.Text, ed2kl, (string.IsNullOrEmpty(textBox1.Text)?"":"\r\n\r\nMagent:"+textBox1.Text));
+            txt_bbscode.Text = String.Format("名侦探柯南 {0}{1} {2}\r\n\r\n制作组：APTX4869字幕组\r\n发布组：APTX分流组\r\nRESEED有效期：{3:yyyy-MM-dd}\r\n文件大小：{4}\r\n\r\n{5}{6}\r\n海报：\r\n\r\n[align=center][img]https://a1ex.pw/img/aptx/qrcode.jpg[/img][/align]\r\n[color=blue]\r\n\r\n\reMule:\n\r\n{9}{10}\r\n\r\n\r\n", (checkBox1.Checked ? "剧场版" + txt_vol.Text + " " : "第" + txt_vol.Text + "话 "), txt_name.Text, comboBox1.Text, DateTime.Today.AddMonths(1).AddDays(-1), size, recad, (checkBox1.Checked ? "m" : "conan"), txt_vol.Text, ed2kl, (string.IsNullOrEmpty(textBox1.Text)?"":"\r\n\r\nMagent:"+textBox1.Text));
             txt_bttitle.Text = String.Format("[APTX4869][CONAN][名侦探柯南 {0} {1}][{2}][{3}]", (checkBox1.Checked ? "MOVIE" + txt_vol.Text : txt_vol.Text), txt_name.Text, (checkBox1.Checked ? "BDRIP" : "HDTV"), comboBox1.Text);
             /*
             txt_btcode.Text = "名侦探柯南 第" + txt_vol.Text + "话 " + txt_name.Text +
@@ -198,7 +199,7 @@ namespace Aptxcode
                 txt_vol.Text + ".jpg[/img]\r\n\r\n\r\n[color=red][b]" +
                 "\r\n\r\n\r\n在线看柯南![url]http://tv.aptx.cn[/url]\r\n";
             */
-            txt_btcode.Text = String.Format("名侦探柯南 {0}{1} {2}\r\n\r\n制作组：APTX4869字幕组\r\n发布组：APTX分流组\r\nRESEED有效期：{3:yyyy-MM-dd}\r\n文件大小：{4}\r\n\r\n{5}{6}\r\n海报：\r\n\r\n[img]https://a1ex.pw/img/aptx/qrcode.jpg[/img]", (checkBox1.Checked ? "剧场版" + txt_vol.Text + " " : "第" + txt_vol.Text + "话 "), txt_name.Text, comboBox1.Text, DateTime.Today.AddMonths(1).AddDays(-1), size, recad, pm2, (checkBox1.Checked ? "m" : "conan"), txt_vol.Text);
+            txt_btcode.Text = String.Format("名侦探柯南 {0}{1} {2}\r\n\r\n制作组：APTX4869字幕组\r\n发布组：APTX分流组\r\nRESEED有效期：{3:yyyy-MM-dd}\r\n文件大小：{4}\r\n\r\n{5}{6}\r\n海报：\r\n\r\n[img]https://a1ex.pw/img/aptx/qrcode.jpg[/img]", (checkBox1.Checked ? "剧场版" + txt_vol.Text + " " : "第" + txt_vol.Text + "话 "), txt_name.Text, comboBox1.Text, DateTime.Today.AddMonths(1).AddDays(-1), size, recad, (checkBox1.Checked ? "m" : "conan"), txt_vol.Text);
             /*
             if (txt_tvol.Text != "")
             {
@@ -438,7 +439,10 @@ namespace Aptxcode
 
         private string GetChangelog()
         {
-            string changelog = @"Version: 1.2.0.0(2021-03-25)
+            string changelog = @"Version: 1.3.0.0(2023-05-10)
+变更招募信息
+
+Version: 1.2.0.0(2021-03-25)
 修改分块大小为 4 MiB
 
 Version: 1.1.0.9(2018 - 11 - 04)
