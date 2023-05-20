@@ -189,7 +189,7 @@ namespace Aptxcode
                 "电信提取码：" + txt_mo1.Text + "\r\n网通提取码：" + txt_mo2.Text + "\r\n[/color]\r\n\r\n[color=red][b]" +
                 "\r\n\r\n\r\n在线看柯南![url]http://tv.aptx.cn[/url]\r\n";
             */
-            txt_bbscode.Text = String.Format("名侦探柯南 {0}{1} {2}\r\n\r\n制作组：APTX4869字幕组\r\n发布组：APTX分流组\r\nRESEED有效期：{3:yyyy-MM-dd}\r\n文件大小：{4}\r\n\r\n{5}{6}\r\n海报：\r\n\r\n[align=center][img]https://a1ex.pw/img/aptx/qrcode.jpg[/img][/align]\r\n[color=blue]\r\n\r\n\reMule:\n\r\n{9}{10}\r\n\r\n\r\n", (checkBox1.Checked ? "剧场版" + txt_vol.Text + " " : "第" + txt_vol.Text + "话 "), txt_name.Text, comboBox1.Text, DateTime.Today.AddMonths(1).AddDays(-1), size, recad, (checkBox1.Checked ? "m" : "conan"), txt_vol.Text, ed2kl, (string.IsNullOrEmpty(textBox1.Text)?"":"\r\n\r\nMagent:"+textBox1.Text));
+            txt_bbscode.Text = String.Format("名侦探柯南 {0}{1} {2}\r\n\r\n制作组：APTX4869字幕组\r\n发布组：APTX分流组\r\nRESEED有效期：{3:yyyy-MM-dd}\r\n文件大小：{4}\r\n\r\n{5}\r\n海报：\r\n\r\n[align=center][img]https://a1ex.pw/img/aptx/qrcode.jpg[/img][/align]\r\n[color=blue]\r\n\r\n\reMule:\n\r\n{8}{9}\r\n\r\n\r\n", (checkBox1.Checked ? "剧场版" + txt_vol.Text + " " : "第" + txt_vol.Text + "话 "), txt_name.Text, comboBox1.Text, DateTime.Today.AddMonths(1).AddDays(-1), size, recad, (checkBox1.Checked ? "m" : "conan"), txt_vol.Text, ed2kl, (string.IsNullOrEmpty(textBox1.Text)?"":"\r\n\r\nMagent:"+textBox1.Text));
             txt_bttitle.Text = String.Format("[APTX4869][CONAN][名侦探柯南 {0} {1}][{2}][{3}]", (checkBox1.Checked ? "MOVIE" + txt_vol.Text : txt_vol.Text), txt_name.Text, (checkBox1.Checked ? "BDRIP" : "HDTV"), comboBox1.Text);
             /*
             txt_btcode.Text = "名侦探柯南 第" + txt_vol.Text + "话 " + txt_name.Text +
@@ -199,7 +199,7 @@ namespace Aptxcode
                 txt_vol.Text + ".jpg[/img]\r\n\r\n\r\n[color=red][b]" +
                 "\r\n\r\n\r\n在线看柯南![url]http://tv.aptx.cn[/url]\r\n";
             */
-            txt_btcode.Text = String.Format("名侦探柯南 {0}{1} {2}\r\n\r\n制作组：APTX4869字幕组\r\n发布组：APTX分流组\r\nRESEED有效期：{3:yyyy-MM-dd}\r\n文件大小：{4}\r\n\r\n{5}{6}\r\n海报：\r\n\r\n[img]https://a1ex.pw/img/aptx/qrcode.jpg[/img]", (checkBox1.Checked ? "剧场版" + txt_vol.Text + " " : "第" + txt_vol.Text + "话 "), txt_name.Text, comboBox1.Text, DateTime.Today.AddMonths(1).AddDays(-1), size, recad, (checkBox1.Checked ? "m" : "conan"), txt_vol.Text);
+            txt_btcode.Text = String.Format("名侦探柯南 {0}{1} {2}\r\n\r\n制作组：APTX4869字幕组\r\n发布组：APTX分流组\r\nRESEED有效期：{3:yyyy-MM-dd}\r\n文件大小：{4}\r\n\r\n{5}\r\n海报：\r\n\r\n[img]https://a1ex.pw/img/aptx/qrcode.jpg[/img]", (checkBox1.Checked ? "剧场版" + txt_vol.Text + " " : "第" + txt_vol.Text + "话 "), txt_name.Text, comboBox1.Text, DateTime.Today.AddMonths(1).AddDays(-1), size, recad, (checkBox1.Checked ? "m" : "conan"), txt_vol.Text);
             /*
             if (txt_tvol.Text != "")
             {
@@ -439,7 +439,11 @@ namespace Aptxcode
 
         private string GetChangelog()
         {
-            string changelog = @"Version: 1.3.0.0(2023-05-10)
+            string changelog = @"Version: 1.3.0.1(2023-05-20)
+修复发布代码 bug
+by datasone
+
+Version: 1.3.0.0(2023-05-10)
 变更招募信息
 
 Version: 1.2.0.0(2021-03-25)
